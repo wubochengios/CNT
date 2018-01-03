@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  CNT
+//
+//  Created by 王智鑫 on 2017/11/7.
+//  Copyright © 2017年 王智鑫. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//#define LOCALBASEURL @"http://192.168.1.137:8080/"
+//#define LOCALBASEURL @"http://47.97.22.242:8080"
+#define LOCALBASEURL @"http://106.14.4.181:8080/" // 服务器地址
+#define UPYUN @"http://webcast.b0.upaiyun.com/"
+#define AUTO_WIDTH  [[UIScreen mainScreen]bounds].size.width / 414.f
+#define AUTO_HEIGHT [[UIScreen mainScreen]bounds].size.height / 736.f
+#define IPHONE6_WIDTH  [[UIScreen mainScreen]bounds].size.width / 375.f
+#define IPHONE6_HEIGHT [[UIScreen mainScreen]bounds].size.height / 667.f
+#define KHEIGHT [[UIScreen mainScreen]bounds].size.height
+#define KWIDTH [[UIScreen mainScreen]bounds].size.width
+#define REDCOLOR [UIColor colorWithRed:255.0f/255.9f green:91.0f/255 blue:95.0f/255 alpha:1]
+#define COLOR_RGB(rgb) [UIColor colorWithRed:((rgb & 0xff0000) >> 16) / 255.0 green:((rgb & 0xff00) >> 8) / 255.0 blue:(rgb & 0xff) / 255.0 alpha:1]
+#define COLOR_RGB_ALPHA(rgb, alpha) [UIColor colorWithRed:((rgb & 0xff0000) >> 16) / 255.0 green:((rgb & 0xff00) >> 8) / 255.0 blue:(rgb & 0xff) / 255.0 alpha:alpha]
+
+#define RXWeak(type) __weak typeof(type)weak##type = type
+
+#define placeholderStr   [UIImage imageNamed:@"content_icon_touxiang_02_default"]
+//agroaId
+#define AgroaAPPID @"8c04e7c9c09d4d4db551b30eca02c1c7"
+#define AgroaCertificate1 @"d0f4bb0c651a4175a7db0e63e71a84aa"
+
+#import "SDCycleScrollView.h"
+#import "SDImageCache.h"
+#import "AFNetworking.h"
+#import "Masonry.h"
+#import "AFTools.h"
+#import "YYModel.h"
+#import "MBProgressHUD+NJ.h"//yhy
+#import "WSTools.h"//yhy
+#import "UrlList.h"//yhy
+#import "UserModel.h"//yhy
+#import "MJRefresh.h"
+#import "YYWebImage.h"
+#import "YYImage.h"
+#import "CommonsClassMethod.h"
+
+#define HOST @""
+#define  IsEmptyStr(string) ([string isKindOfClass:[NSNull class]] || string == nil || string == NULL || [string isEqualToString:@""] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0)
+
+#endif /* PrefixHeader_pch */
